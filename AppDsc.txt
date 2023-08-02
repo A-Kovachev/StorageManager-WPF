@@ -1,11 +1,9 @@
 
 TABLE WITH PRODUCTS
-- row - <select box>, <number>, <product name>, <quantity>, <price per unit>
+- row - <select box>, <number>, <product name>, <quantity>, <price per unit> (all editable exept name)
 
 
 	Buttnos
-
-- search button(searchbar)
 
 ADD BUTTON
 1.	 - "add new" entire new row
@@ -16,5 +14,11 @@ DEL BUTTON
 
 SOLD BUTTON
 	- recieves squantity of selected items -> calculates current price
+
+SELECT ALL 
+	- selects all products in the table
+
+DESELECT ALL
+	- deselects every product in the table
 
 	
