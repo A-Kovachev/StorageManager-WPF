@@ -1,0 +1,51 @@
+﻿<Window x:Class="StorageTracker.SellWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StorageTracker"
+        mc:Ignorable="d"
+        Title="SellWindow" Height="220" Width="400" Background="LightCoral">
+    <Canvas 
+        Background="LightCoral">
+        <Canvas.Resources>
+            <Style x:Name="ButtonStyle" TargetType="Button">
+                <Setter Property="Canvas.Top" Value="135"/>
+                <Setter Property="Canvas.Left" Value="95"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Width" Value="80"/>
+                <Setter Property="BorderThickness" Value="2"/>
+                <Setter Property="BorderBrush" Value="Black"/>
+            </Style>
+        </Canvas.Resources>
+
+        <Label
+            Canvas.Top="25"
+            Canvas.Left="95"
+            Content="Enter quantity sold:"
+            FontSize="25">
+        </Label>
+        <TextBox
+            Name="SellWindow_TextBoxQuantity"
+            Canvas.Top="80"
+            Canvas.Left="155"
+            Width="90"
+            Height="30"
+            BorderThickness="2"
+            BorderBrush="Black"
+            FontSize="20"
+            TextAlignment="Center">
+        </TextBox>
+        <Button
+            Content="ENTER"
+            Click="EnterButtonClicked">
+        </Button>
+        <Button
+            Canvas.Left="220"
+            Content="CANCEL"
+            Width="100"
+            Click="CancelButtonClicked">
+        </Button>
+    </Canvas>
+</Window>

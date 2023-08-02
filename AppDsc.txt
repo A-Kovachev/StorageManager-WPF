@@ -1,0 +1,20 @@
+
+TABLE WITH PRODUCTS
+- row - <select box>, <number>, <product name>, <quantity>, <price per unit>
+
+
+	Buttnos
+
+- search button(searchbar)
+
+ADD BUTTON
+1.	 - "add new" entire new row
+	 - "stack item" increase quantity of selected item/s
+
+DEL BUTTON
+	- deletes sselected rows
+
+SOLD BUTTON
+	- recieves squantity of selected items -> calculates current price
+
+	

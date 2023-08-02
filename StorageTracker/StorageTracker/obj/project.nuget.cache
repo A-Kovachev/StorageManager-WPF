@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KNaigm19b+vahqfLWKxxaCYMZyhF8dkWJkoF30h6Cq6YyebUIAvXAeCRiRKQLEoYcR0Hm24qRjo7yLtXHZhmXQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DESKTOP\\Desktop\\OZI\\StorageTracker\\StorageTracker\\StorageTracker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DESKTOP\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

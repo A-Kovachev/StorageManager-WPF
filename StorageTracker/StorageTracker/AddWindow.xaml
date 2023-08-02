@@ -1,0 +1,75 @@
+﻿<Window x:Class="StorageTracker.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StorageTracker"
+        mc:Ignorable="d"
+        Title="Create New Product" Height="400" Width="600" Background="LightCoral">
+    <Grid>
+        <StackPanel
+            Orientation="Vertical"
+            Margin="10"
+            Width="580">
+            <StackPanel.Resources>
+                <Style x:Name="TextBox" TargetType="TextBox">
+                    <Setter Property="FontSize" Value="30" />
+                    <Setter Property="HorizontalAlignment" Value="Left" />
+                    <Setter Property="Height" Value="40" />
+                </Style>
+                <Style x:Name="Label" TargetType="Label">
+                    <Setter Property="FontSize" Value="25" />
+                    <Setter Property="HorizontalAlignment" Value="Left" />
+                </Style>
+            </StackPanel.Resources>
+            
+            <!--Text boxes-->
+            <Label Content="Pruduct Name:" />
+            <TextBox
+                Name="AddWindow_ProductBox"
+                Width="400"
+                Text="">
+            </TextBox>
+            
+            <Label Content="Quantity:" />
+            <TextBox
+                Name="AddWindow_QuantityBox"
+                Width="150">
+            </TextBox>
+            
+            <Label Content="Price for one:" />
+            <TextBox
+                Name="AddWindow_PriceBox"
+                Width="150">
+            </TextBox>
+            
+            <!--Buttons-->
+            <Canvas>
+                <Canvas.Resources>
+                   <Style x:Name="Button" TargetType="Button">
+                       <Setter Property="Canvas.Top" Value="50"/>
+                       <Setter Property="Width" Value="105"/>
+                       <Setter Property="Height" Value="40"/>
+                       <Setter Property="FontSize" Value="20"/>
+                       <Setter Property="FontWeight" Value="Bold"/>
+                       <Setter Property="BorderBrush" Value="Black"/>
+                       <Setter Property="BorderThickness" Value="2"/>
+                   </Style>
+                </Canvas.Resources>
+
+                <Button
+                    Canvas.Left="20"
+                    Content="ADD"
+                    Width="65"
+                    Click="AddButtonClicked">
+                </Button>
+
+                <Button
+                    Canvas.Right="20"
+                    Content="CANCEL"
+                    Click="CancelButtonIsClicked">
+                </Button>
+            </Canvas>
+        </StackPanel>
+    </Grid>
+</Window>
